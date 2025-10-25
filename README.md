@@ -11,6 +11,11 @@ A simple and efficient task management application built with React and .NET Cor
 - **Responsive Design**: Clean, modern UI that works on all devices
 - **Real-time Updates**: Instant visual feedback for all actions
 
+## 🌐 Live Application
+
+- **Frontend**: [https://basic-task-manager-one.vercel.app/](https://basic-task-manager-one.vercel.app/)
+- **Backend API**: [https://basic-task-manager-sdbr.onrender.com](https://basic-task-manager-sdbr.onrender.com)
+
 ## 🏗️ Architecture
 
 The project consists of two main components:
@@ -218,11 +223,6 @@ npm test
 
 ## 🚀 Deployment
 
-### 🌐 Live Application
-
-- **Frontend**: [https://basic-task-manager-one.vercel.app/](https://basic-task-manager-one.vercel.app/)
-- **Backend API**: [https://basic-task-manager-sdbr.onrender.com](https://basic-task-manager-sdbr.onrender.com)
-
 ### Backend Deployment
 
 The .NET Core application can be deployed to:
@@ -273,33 +273,8 @@ The frontend is configured to connect to the deployed API at [https://basic-task
 - Axios 1.12.2
 - Tailwind CSS 3.4.18
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is part of the Appsian Coding Assignment.
-
 ## 🐛 Known Issues
 
 - Tasks are stored in memory and will be lost on server restart
 - No user authentication or data isolation
 - No task categories or priorities
-
-## 🔮 Future Enhancements
-
-- Database persistence for tasks
-- User authentication and multi-user support
-- Task categories and tags
-- Due dates and reminders
-- Task priorities and sorting
-- Export/import functionality
-- Mobile app development
-- Real-time collaboration
-- Task templates and recurring tasks
-- Advanced filtering and search
