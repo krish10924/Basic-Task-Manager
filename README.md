@@ -68,7 +68,7 @@ dotnet restore
 dotnet run
 ```
 
-The API will be available at  `http://localhost:5051`
+The API will be available at `http://localhost:5051`
 
 ### Frontend Setup
 
@@ -178,16 +178,22 @@ Delete a task.
 
 Test the API endpoints using tools like Postman or curl:
 
-**Get all tasks:**
+**Local Testing:**
 
 ```bash
-curl -X GET https://localhost:7000/api/tasks
+curl -X GET http://localhost:5051/api/tasks
+```
+
+**Live API Testing:**
+
+```bash
+curl -X GET https://basic-task-manager-sdbr.onrender.com/api/tasks
 ```
 
 **Create a new task:**
 
 ```bash
-curl -X POST https://localhost:7000/api/tasks \
+curl -X POST https://basic-task-manager-sdbr.onrender.com/api/tasks \
   -H "Content-Type: application/json" \
   -d '{"description": "Test task"}'
 ```
@@ -195,13 +201,13 @@ curl -X POST https://localhost:7000/api/tasks \
 **Toggle task completion:**
 
 ```bash
-curl -X PUT https://localhost:7000/api/tasks/1/toggle
+curl -X PUT https://basic-task-manager-sdbr.onrender.com/api/tasks/1/toggle
 ```
 
 **Delete a task:**
 
 ```bash
-curl -X DELETE https://localhost:7000/api/tasks/1
+curl -X DELETE https://basic-task-manager-sdbr.onrender.com/api/tasks/1
 ```
 
 ### Frontend Testing
@@ -211,6 +217,11 @@ npm test
 ```
 
 ## 🚀 Deployment
+
+### 🌐 Live Application
+
+- **Frontend**: [https://basic-task-manager-one.vercel.app/](https://basic-task-manager-one.vercel.app/)
+- **Backend API**: [https://basic-task-manager-sdbr.onrender.com](https://basic-task-manager-sdbr.onrender.com)
 
 ### Backend Deployment
 
@@ -241,11 +252,11 @@ The built files will be in the `build/` directory, ready for deployment to:
 ### Environment Variables
 
 - `ASPNETCORE_ENVIRONMENT`: Development/Production environment
-- `ASPNETCORE_URLS`: Server URLs (default: http://localhost:5000)
+- `ASPNETCORE_URLS`: Server URLs (default: http://localhost:5051)
 
 ### API Configuration
 
-Update the `API_URL` constant in the frontend `App.tsx` file to point to your deployed backend.
+The frontend is configured to connect to the deployed API at [https://basic-task-manager-sdbr.onrender.com](https://basic-task-manager-sdbr.onrender.com). To use a local backend, update the `API_URL` constant in the frontend `App.tsx` file.
 
 ## 📝 Dependencies
 
