@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Task } from "./types";
 
-const API_URL = "http://localhost:5051/api/tasks";
+const API_URL = "https://basic-task-manager-sdbr.onrender.com/api/tasks";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
